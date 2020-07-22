@@ -574,7 +574,7 @@ def remove_sents(blacklist,vec,numTopics):
     
     for i in range(len(top_sim)):
         index = top_sim[i][0]
-        sentence_id = top_sim[i][1]
+        sentence_id = top_sim[i][2]
         cos_sim[index].append(sentence_id)           
     
     for i in range(len(cos_sim)):
